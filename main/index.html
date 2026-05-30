@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMatchOJT - Role Selection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="selection-screen" class="screen">
+        <div class="selection-header">
+            <div class="logo-mark">P</div>
+
+            <h1 class="selection-title">iMatchOJT</h1>
+
+            <p class="selection-campus">PUP Santa Rosa Campus</p>
+        </div>
+
+        <button class="role-btn student" onclick="location.href='html/student/student-login.html'">
+            <span style="display:flex;align-items:center;">
+                <span class="icon">🎓</span>
+                Login as PUP Student
+            </span>
+
+            <span class="arrow">→</span>
+        </button>
+
+        <button class="role-btn admin" onclick="location.href='html/admin/admin-login.html'">
+            <span style="display:flex;align-items:center;">
+                <span class="icon">💼</span>
+                Login as Coordinator / Admin
+            </span>
+
+            <span class="arrow">→</span>
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

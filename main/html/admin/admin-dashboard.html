@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div id="admin-dashboard" class="screen">
+
+        <!-- Header -->
+        <div class="card dash-header dash-header-admin">
+
+            <div class="dash-header-info">
+
+                <div class="avatar avatar-admin">💼</div>
+
+                <div>
+                    <p class="dash-name">
+                        Prof. Marites L. Ramos
+                    </p>
+
+                    <p class="dash-sub">
+                        OJT Coordinator / Main System Administrator • PUP SR
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="btn btn-ghost" onclick="logout()">
+                Exit Console
+            </button>
+
+        </div>
+
+        <!-- KPI Row -->
+        <div class="grid-4">
+
+            <div class="card metric-card">
+                <p class="metric-label">Total IT Trainees</p>
+
+                <p class="metric-value plain" style="font-size:1.4rem;">
+                    142 Students
+                </p>
+            </div>
+
+            <div class="card metric-card">
+                <p class="metric-label">Successfully Matched</p>
+
+                <p class="metric-value emerald" style="font-size:1.4rem;">
+                    118 Deployed
+                </p>
+            </div>
+
+            <div class="card metric-card">
+                <p class="metric-label">Pending Approvals</p>
+
+                <p class="metric-value" style="font-size:1.4rem;">
+                    24 Uploads
+                </p>
+            </div>
+
+            <div class="card metric-card">
+                <p class="metric-label">Active Core Partners</p>
+
+                <p class="metric-value plain" style="font-size:1.4rem;">
+                    38 HTE Firms
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Control Panel -->
+        <div class="admin-grid">
+
+            <!-- Verification Queue -->
+            <div class="card feature-card">
+
+                <div class="queue-header">
+
+                    <h3 class="queue-title">
+                        Document Verification Work-Queue
+                    </h3>
+
+                    <span class="queue-badge">
+                        Action Required
+                    </span>
+
+                </div>
+
+                <div class="queue-item">
+
+                    <div>
+                        <p class="queue-item-name">
+                            Santos, Mark Ivan (2023-00124)
+                        </p>
+
+                        <p class="queue-item-doc">
+                            Document: Weekly Progress Logbook #4 (15 Hours)
+                        </p>
+                    </div>
+
+                    <div class="queue-item-btns">
+                        <button class="btn-accept">Accept</button>
+
+                        <button class="btn-reject">Reject</button>
+                    </div>
+
+                </div>
+
+                <div class="queue-item">
+
+                    <div>
+                        <p class="queue-item-name">
+                            Alcantara, Elena G. (2023-08531)
+                        </p>
+
+                        <p class="queue-item-doc">
+                            Document: Endorsement Certificate Sign-off
+                        </p>
+                    </div>
+
+                    <div class="queue-item-btns">
+                        <button class="btn-accept">Accept</button>
+
+                        <button class="btn-reject">Reject</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- AI Tuner -->
+            <div class="card feature-card">
+
+                <div class="tuner-divider">
+
+                    <h3 class="tuner-title">
+                        AI Match Engine Tuner
+                    </h3>
+
+                    <p class="tuner-sub">
+                        Adjust placement weighting weights.
+                    </p>
+
+                </div>
+
+                <div class="range-group">
+
+                    <div class="range-label-row">
+                        <label class="range-label">
+                            Skill Competency Matrix Weight
+                        </label>
+
+                        <span class="range-val">65%</span>
+                    </div>
+
+                    <input type="range" value="65" min="0" max="100">
+
+                </div>
+
+                <div class="range-group">
+
+                    <div class="range-label-row">
+                        <label class="range-label">
+                            Geographic Proximity (Barangay)
+                        </label>
+
+                        <span class="range-val">35%</span>
+                    </div>
+
+                    <input type="range" value="35" min="0" max="100">
+
+                </div>
+
+                <div class="fc-spacer"></div>
+
+                <button class="btn btn-dark btn-full" style="margin-top:1rem;border:1px solid var(--gold);">
+                    Re-Index Deployment System
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>

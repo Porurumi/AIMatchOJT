@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div id="student-dashboard" class="screen">
+
+        <!-- Header -->
+        <div class="card dash-header">
+            <div class="dash-header-info">
+                <div class="avatar avatar-student">🎓</div>
+
+                <div>
+                    <p class="dash-name">Dela Cruz, Juan A.</p>
+
+                    <p class="dash-sub">
+                        Student ID: 2023-01421-SR-0 • BS Information Technology
+                    </p>
+                </div>
+            </div>
+
+            <div class="dash-header-actions">
+                <span class="status-pill">Deployed</span>
+
+                <button class="btn btn-outline" onclick="logout()">
+                    Log Out
+                </button>
+            </div>
+        </div>
+
+        <!-- KPI Row -->
+        <div class="grid-3">
+
+            <div class="card metric-card">
+                <p class="metric-label">OJT Hours Accumulation</p>
+
+                <p class="metric-value">
+                    240 <span class="unit">/ 486 hrs</span>
+                </p>
+
+                <div class="progress-track">
+                    <div class="progress-fill" style="width:49%;"></div>
+                </div>
+            </div>
+
+            <div class="card metric-card">
+                <p class="metric-label">Document Compliance</p>
+
+                <p class="metric-value dark">
+                    3 <span class="unit">of 5 Verified</span>
+                </p>
+
+                <p class="metric-note">
+                    ⚠ 1 Document Pending Revision
+                </p>
+            </div>
+
+            <div class="card metric-card card-gold-accent">
+                <p class="metric-label" style="color:var(--maroon);">
+                    AI Skill Match Rating
+                </p>
+
+                <p class="metric-value amber">94%</p>
+
+                <p class="metric-note-gray">
+                    Profile highly optimized for Cloud & Database roles.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Feature Row -->
+        <div class="grid-2">
+
+            <!-- Compliance -->
+            <div class="card feature-card">
+
+                <h3 class="feature-card-title">
+                    Document Compliance Checklist
+                </h3>
+
+                <div>
+
+                    <div class="checklist-item">
+                        <span>1. Resume & Portfolio</span>
+
+                        <span class="badge badge-approved">
+                            Approved
+                        </span>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span>2. Recommendation Form</span>
+
+                        <span class="badge badge-approved">
+                            Approved
+                        </span>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span>3. Host Training Agreement (MOA)</span>
+
+                        <span class="badge badge-review">
+                            Under Review
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="fc-spacer"></div>
+
+                <button class="btn btn-stone btn-full" style="margin-top:1rem;">
+                    Upload Next Clearance Form
+                </button>
+
+            </div>
+
+            <!-- AI Placement -->
+            <div class="card feature-card">
+
+                <h3 class="feature-card-title">
+                    Top AI Placement Matches
+                </h3>
+
+                <div>
+
+                    <div class="placement-card">
+
+                        <div class="placement-row">
+                            <p class="placement-name">
+                                Acuity Systems Corp (Santa Rosa)
+                            </p>
+
+                            <span class="badge badge-maroon">
+                                94% Match
+                            </span>
+                        </div>
+
+                        <p class="placement-skills">
+                            Required Competencies: PostgreSQL, UI Frameworks, REST APIs.
+                        </p>
+
+                    </div>
+
+                    <div class="placement-card">
+
+                        <div class="placement-row">
+                            <p class="placement-name">
+                                Laguna Tech Hub Solutions
+                            </p>
+
+                            <span class="badge badge-maroon">
+                                89% Match
+                            </span>
+                        </div>
+
+                        <p class="placement-skills">
+                            Required Competencies: Mobile Testing, Database Schemas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="fc-spacer"></div>
+
+                <button class="btn btn-maroon btn-full" style="margin-top:1rem;">
+                    Open Placement Explorer
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>

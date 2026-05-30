@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div class="screen">
+        <div class="card portal-card">
+
+            <div class="portal-form-side">
+
+                <button class="back-btn" onclick="location.href='../../index.html'">
+                    ← Return to Roles
+                </button>
+
+                <div class="portal-inner">
+
+                    <div style="margin-bottom:1.75rem;">
+                        <span class="badge entry-badge-student">
+                            Student Entry
+                        </span>
+
+                        <h2 class="portal-heading">
+                            Welcome, Academician
+                        </h2>
+                    </div>
+
+                    <form onsubmit="studentLogin(event)">
+
+                        <div class="form-group">
+                            <label>Student Number</label>
+
+                            <input
+                                class="form-input"
+                                type="text"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+
+                            <input
+                                class="form-input"
+                                type="password"
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-maroon btn-full">
+                            Sign In
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="portal-visual-side vs-student">
+
+                <span class="vs-label">iMatchOJT</span>
+
+                <div>
+                    <h3 class="vs-heading">
+                        Smart OJT Placement
+                    </h3>
+
+                    <p class="vs-desc">
+                        AI-driven automated document tracking and matching.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>

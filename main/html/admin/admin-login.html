@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div class="screen">
+        <div class="card portal-card">
+
+            <div class="portal-form-side">
+
+                <button class="back-btn" onclick="location.href='../../index.html'">
+                    ← Return to Roles
+                </button>
+
+                <div class="portal-inner">
+
+                    <div style="margin-bottom:1.75rem;">
+                        <span class="badge entry-badge-admin">
+                            Authorized Personnel Only
+                        </span>
+
+                        <h2 class="portal-heading">
+                            Secure Console
+                        </h2>
+                    </div>
+
+                    <form onsubmit="adminLogin(event)">
+
+                        <div class="form-group">
+                            <label>Email</label>
+
+                            <input
+                                class="form-input"
+                                type="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+
+                            <input
+                                class="form-input"
+                                type="password"
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-full">
+                            Verify and Proceed
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="portal-visual-side vs-admin">
+
+                <span class="vs-label">Console Gateway</span>
+
+                <div>
+                    <h3 class="vs-heading">
+                        System Administration
+                    </h3>
+
+                    <p class="vs-desc">
+                        Compliance validation and deployment management.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>
