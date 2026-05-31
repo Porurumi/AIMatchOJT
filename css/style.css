@@ -159,6 +159,7 @@
             min-height: 500px;
             display: flex;
             flex-direction: column;
+            margin: 0 auto;
         }
 
         @media (min-width: 720px) {
